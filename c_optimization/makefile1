@@ -1,0 +1,12 @@
+
+CC=gcc
+CFLAGS=
+
+all:
+	$(CC) $(CFLAGS) c_opt_0.c -o c_opt_0 -lm
+	$(CC) $(CFLAGS) c_opt_1.c -o c_opt_1 -lm
+	$(CC) $(CFLAGS) c_opt_2.c -o c_opt_2 -lm
+	$(CC) $(CFLAGS) -fopenmp c_opt_2.c -o c_opt_2_mp -lm
+
+clean:
+	rm c_opt_0 c_opt_1 c_opt_2 c_opt_2_mp
