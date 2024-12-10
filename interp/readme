@@ -1,0 +1,16 @@
+
+These use 3 different algorithms to interpolate the given data
+1) Nearest neighbor : find n (default = 1) nearest neighbors to
+	 the interpolated point and assign the same value.
+2) Shephard: use a inverse weighted method
+3) Similar to Shephard but uses weights to insure that the interpolation
+   will reproduce values at sample points.
+
+Instruction for use 
+
+1) type make
+2) ./rbf && gnuplot -persist < rbf_plt.sh > rbf.png
+
+repeat  step 2 for shep and nn
+
+ 

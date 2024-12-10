@@ -1,6 +1,6 @@
 
 CC=gcc
-CFLAGS=-pg -O -g
+CFLAGS=-pg -g
 
 all:
 	$(CC) $(CFLAGS) c_opt_0.c -o c_opt_0 -lm
